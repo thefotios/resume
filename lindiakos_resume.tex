@@ -1,0 +1,193 @@
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{casual}
+%% \moderncvcolor{blue}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+%% Personal data
+\firstname{Fotios}
+\familyname{Lindiakos}
+%\title{Resumé title (optional)}
+\address{34 Sherman Street}{Huntington, NY 11743}
+\mobile{(516) 864-6638}
+\phone{(631) 271-2763}
+\email{fotioslindiakos@gmail.com}
+%%\homepage{www.johndoe.com}
+\social[linkedin]{thefotios}
+\social[github]{fotioslindiakos}
+\social[twitter]{thefotios}
+%%\extrainfo{additional information}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Experience}
+\cventry
+{
+\mbox{Jan 2014}
+-
+\mbox{Present}
+}
+{Principal Engineer}
+{Shutterstock Images}
+{New York, NY}
+{}
+{
+\textbf{
+Principal Engineer (Mar 2016 - Oct 2016)
+}
+\begin{itemize}
+\item Continued work on our internal platform and worked closely with multiple stakeholders (other development teams) to ensure their requirements and concerns were met while they migrated their applications onto our framework
+\item Helped organize and drive architecture reviews of new (and existing) large scale services
+\item Consistently assisted in our "warroom" during production issues
+\item Continued to improve our interview process by collaborating with other senior engineers on refining the skills and competencies against which to evaluate candidates
+\end{itemize}
+\textbf{
+Software Engineer (Jan 2014 - Mar 2016)
+}
+\begin{itemize}
+\item As a member of our Contributor team, I was responsible for Web and API development and migrating a legacy Perl application into NodeJS. Included both web application development as well as RESTful APi development
+\item Contributed to our internal developer tools team to improve our build and deployment system
+\item Started and led a grass roots effort to improve our monitoring and alerting by using industry standard tools
+\item As the senior member of our platform team, architected and developed an internal NodeJS framework (based on Express) that all new applications and APIs are based on. This allows rapid development and deduplication of efforts across multiple development teams in our new services oriented architecture
+\item Worked closely with recruiting and tech leadership to improve our interviewing and hiring process (conducted over 100 interviews)
+\item Won an internal hackathon (Dec 2015) for developing a tool to replay legacy API calls against new services (idempotent requests only) and compare their response values and performance.
+\end{itemize}
+}
+
+\cventry
+{
+\mbox{Aug 2011}
+-
+\mbox{Jan 2014}
+}
+{Software Engineer}
+{Red Hat}
+{Raleigh, NC (remote)}
+{}
+{
+\textbf{OpenShift} \\
+Worked on OpenShift Online.
+Primarily responsible for backend orchestraion and cartridge development.
+Other projects included
+developing a daemon that automatically throttled abusive applications using Linux control groups,
+developing the web console,
+developing our command line tools,
+and improving our testing procedures and coverage.
+}
+\cventry
+{
+\mbox{June 2007}
+-
+\mbox{Aug 2011}
+}
+{Senior Cybersecurity Engineer/Scientist}
+{The MITRE Corporation}
+{McLean, VA}
+{}
+{
+\textbf{Cybersecurity Operations Center (CSOC)} \\
+I worked in a lab that developed novel security solutions for combating the advanced persistent threat and nation-state level adversaries.
+As part of this effort, I created the INTERSECT project which is described below.
+\\
+\textbf{Cross Boundary Information Sharing Lab (XBIS)} \\
+I worked in a lab dedicated to experimenting with and testing cross-domain security devices.
+In this lab, built an extensive virtual infrastructure to simulate classified environments.
+I have also engineered solutions that leverage these devices for use in operational environments, such as the JSChat project described below.
+\\
+\textbf{General Officers' Workshop} \\
+I regularly gave a demonstration of realistic hacking scenarios to a quarterly training program given to newly promoted General Officers for the Army.
+I have also given the same demonstration to Center for Medicare \& Medicaid Services and the Army Core of Engineers (with some customization to make it more applicable to those audiences).
+\\
+\textbf{Penetration Testing} \\
+I have performed numerous penetration tests and vulnerability assessments for different sponsors.
+I was primarily responsible for web application testing and have given courses on web application security to sponsors and coworkers.
+}
+\cventry{Summer 2006}{Technical Intern}{The MITRE Corporation}{McLean, VA}{}{
+Worked on the Honeyclient Project, which was a malware detection system developed in Perl.
+At the time, it was a novel concept that has since spurred numerous commercial endeavors.
+}
+
+\section{Skills}
+\subsection{Primary Skills}
+\cvitem{Development}
+{
+NodeJS
+}
+\cvitem{Infrastructure}
+{
+Kubernetes/Docker/helm,
+AWS,
+Terraform,
+Linux
+}
+\cvitem{Data}
+{
+Relational Databases (MySQL, PostgreSQL),
+Graph Databases,
+RabbitMQ,
+Redis,
+Memcache/mcrouter
+}
+
+\subsection{Other Skills}
+\cvitem{Languages}
+{Ruby, Perl, Python, HTML/CSS, \LaTeX}
+\cvitem{Other}
+{
+Agile Software Development,
+REST,
+Networking,
+Security/Penetration Testing
+}
+
+\section{Education}
+\cventry
+{2002--2007}
+{B.S. in Computer Science}
+{Rochester Institute of Technology}
+{Rochester, NY}
+{}
+{}
+\cventry
+{2010--2014}
+{M.S. Information Security and Assurance (Incomplete)}
+{George Mason University}
+{Fairfax, VA}
+{}
+{I moved to New York and was unable to complete final 3 credits remotely}
+
+\section{Projects}
+\cvitem{INTERSECT}{
+    A distributed malware analysis framework I created (along with a coworker) while working at MITRE.
+    This framework allowed multiple, disparate malware analysis engines to analyze potentially malicious files and report their findings which were then aggregated and evaluated.
+    It allowed us to gather data from commercial tools, open source tools, as well as in-house developed tools, and compare results.
+    Another major benefit was that when implementing a new tool, it only needed to be integrated with the existing INTERSECT infrastructure (as opposed to the entire corporate infrastructure).
+    This made for much faster tool integration and prototyping research projects against production data.
+    At the time, this was an extremely novel concept and was very effective for countering advanced cyber attacks against our corporate network.
+    We presented at Shmoocon 2011 and the slides and video are available online (\url{http://bit.ly/shmoocon_intersect}).
+}
+\cvitem{JSChat}{
+    As part of a small team, developed a JavaScript based XMPP client almost entirely from scratch.
+    This was necessary due to security requirements levied upon us as well as target platform constraints.
+    This was done in a very rapid manner with a very high degree of autonomy, while also receiving and assigning tasks from other teammates whose code interfaced with my own.
+    The engineering of a strong, internal API as well as coding practices and very ``outside of the box'' thinking contributed to the success of this project.
+    Within approximately six months, we created a very robust prototype that was well received by the sponsor and performed well during operational tests.
+}
+
+
+\section{Other}
+\cvitem{Awards}{Eagle Scout, National Honor Society, Walt Whitman High School Athlete of the Year}
+\cvitem{Associations}{Computer Science House, National Eagle Scout Association, Shenandoah Mountain Rescue Group}
+
+\end{document}
