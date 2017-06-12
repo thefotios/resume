@@ -21,7 +21,7 @@
 \email{fotioslindiakos@gmail.com}
 %%\homepage{www.johndoe.com}
 \social[linkedin]{thefotios}
-\social[github]{fotioslindiakos}
+\social[github]{thefotios}
 \social[twitter]{thefotios}
 %%\extrainfo{additional information}
 
@@ -30,6 +30,37 @@
 %%------------------------------------------------------------------------------
 \begin{document}
 \makecvtitle
+
+\section{Skills}
+\cvitem{Expert}{
+NodeJS,
+Kubernetes/Docker,
+Terraform,
+RabbitMQ/AMQP,
+Memcache,
+Application Architecture (12 Factor best practices, scalability, distributed applications)
+}
+\cvitem{Advanced}{
+Ruby,
+AWS,
+NoSQL (Redis, Graph Databases),
+RDBMS (MySQL),
+Networking,
+Security/Penetration Testing
+}
+\cvitem{Intermediate}
+{
+Perl,
+React
+}
+\cvitem{Novice}
+{
+Python,
+Golang,
+Kotlin,
+CQRS
+}
+
 
 \section{Experience}
 \cventry
@@ -43,32 +74,41 @@
 {New York, NY}
 {}
 {
-\textbf{NextGen AWS and Workflow Team (Principal Engineer / Development Lead)} \\
-Independently researched and implemented a proof of concept cloud architecture using AWS and Mesos under the direction of our CTO.
-After proving viability, created and led a team that delivered a functional architecture in 4 months.
-This included developing an Infrastructure-as-Code pipeline (utlizing terraform),
-implementing new development processes (a new ephemeral branching model) powered by Jenkins 2 and pipelines,
-and adopting Kubernetes as our container orchestration technology.
-It also meant working closely with a parallel team rearchitecting our in-house legacy datacenter in order to reduce duplication of efforts
-Also responsible for analyzing applications from multiple teams to determine the best strategy for migration.
-This migration included application architecture and taking advantage of AWS/SaaS services previously unavailable in our legacy datacenter.
-\\
-\textbf{Javascript Platform Team (Principal Engineer / Development Lead)} \\
-Developed an internal framework and worked closely with multiple stakeholders (other development teams) to ensure their requirements and concerns were met while they migrated their applications onto our framework
-\\
-\textbf{Contributor Team (Software Engineer)} \\
-Responsible for Web and API development and migrating a legacy Perl application into NodeJS.
-\\
-\textbf{Other} \\
-Worked closely with recruiting and tech leadership to improve our interviewing and hiring process (conducted over 100 interviews).
-Won an internal hackathon (Dec 2015) for developing a tool to replay legacy API calls against new services (idempotent requests only) and compare their response values and performance.
 \textbf{Positions}
 \begin{itemize}
   \item Software Engineer - Jan 2014 - Mar 2016
   \item Principal Engineer - Mar 2016 - Present
 \end{itemize}
+~\\
+\textbf{NextGen Cloud Infrastructure Team (Principal Engineer / Development Lead)} \\
+Independently researched and implemented a proof of concept cloud architecture using AWS and Mesos under the direction of our CTO.
+Developed a delivery plan and formed a team of 4 internal engineers and 4 contractors.
+Delivered a functional prototype within 4 months and the first production application within 6 months.
+\\
+\\
+This included developing an Infrastructure-as-Code pipeline (utlizing terraform),
+implementing new development processes powered by Jenkins 2,
+and adopting Kubernetes as the container orchestration technology.
+\\
+\\
+Worked with and advised a separate team of contractors and other internal teams to migrate applications to the new infrastructure.
+This included converting existing build, test, and deployment processes to work on the new platform as well as modifying application architecture to be "cloud ready" and taking advantage of AWS/SaaS services previously unavailable in our legacy infrastructure.
+\\
+\\
+\textbf{Javascript Platform Team (Principal Engineer / Development Lead)} \\
+Developed an internal framework and worked closely with multiple stakeholders (other development teams) to ensure their requirements and concerns were met while they migrated their applications onto our framework
+\\
+\\
+\textbf{Contributor Team (Software Engineer)} \\
+Responsible for Web and API development and migrating a legacy Perl application into NodeJS.
+\\
+\\
+\textbf{Other} \\
+Participated in weekly architecture reviews of new services as well as proposed improvements
+Worked closely with recruiting and tech leadership to improve our interviewing and hiring process (conducted over 100 interviews).
+Won an internal hackathon (Dec 2015) for developing a tool to replay legacy API calls against new services (idempotent requests only) and compare their response values and performance.
+\\
 }
-
 \cventry
 {
 \mbox{Aug 2011}
@@ -121,35 +161,6 @@ I was primarily responsible for web application testing and have given courses o
 Worked on the Honeyclient Project, which was a malware detection system developed in Perl.
 At the time, it was a novel concept that has since spurred numerous commercial endeavors.
 }
-
-\section{Skills}
-\cvitem{Development}
-{
-NodeJS,
-Ruby, Perl, Python
-}
-\cvitem{Infrastructure}
-{
-Kubernetes/Docker,
-AWS,
-Terraform,
-Linux
-}
-\cvitem{Data}
-{
-MySQL,
-RabbitMQ,
-Redis,
-Memcache/mcrouter
-}
-\cvitem{Other}
-{
-Agile Software Development,
-REST,
-Networking,
-Security/Penetration Testing
-}
-
 \section{Education}
 \cventry
 {2002--2007}
